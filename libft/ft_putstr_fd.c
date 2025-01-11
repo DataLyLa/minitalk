@@ -6,15 +6,15 @@
 /*   By: lylaurol <lylaurol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 11:15:18 by lylaurol          #+#    #+#             */
-/*   Updated: 2024/06/08 21:40:18 by lylaurol         ###   ########.fr       */
+/*   Updated: 2025/01/11 21:10:39 by lylaurol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    if(s)
-	    while (*s)
-		    write(fd, s++, 1);
+	if (s)
+		while (*s)
+			write(fd, s++, 1);
 }
